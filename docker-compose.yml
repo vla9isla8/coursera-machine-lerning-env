@@ -1,0 +1,11 @@
+version: '2.3'
+services:
+    jupiter:
+        image: docker.pkg.github.com/vla9isla8/coursera-machine-lerning-env/jupiter:latest
+        container_name: jupiter
+        volumes:
+            # Кладем блокноты в локальную папку
+            - D:/jupiter:/home/jovyan/work
+        ports:
+            # Внешний порт для jupiter
+            - 10000:8888
