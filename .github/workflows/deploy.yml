@@ -17,7 +17,7 @@ jobs:
         # Docker Channel
         docker_channel: stable # optional, default is stable
     - run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u vla9isla8 --password-stdin
-    - run: docker build . -t docker.pkg.github.com/vla9isla8/coursera-machine-lerning-env/juiter:latest
+    - run: docker build . -t docker.pkg.github.com/vla9isla8/coursera-machine-lerning-env/jupiter:latest
     - run: docker push docker.pkg.github.com/vla9isla8/coursera-machine-lerning-env/jupiter:latest
       env:
         CI: true
